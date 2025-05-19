@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  font-size: .875rem;
+  background-color: #f8f9fa;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #212529;
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #adb5bd;
+  padding: .75rem 1rem;
+  border-radius: 0;
+}
+
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/* Content */
+.content-container {
+  padding: 20px 0;
+}
+
+/* Login Card */
+.login-card {
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: none;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Status Badges */
+.badge-scheduled {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.badge-in-progress {
+  background-color: #007bff;
+  color: white;
+}
+
+.badge-completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-cancelled {
+  background-color: #dc3545;
+  color: white;
+}
+
+.badge-pending {
+  background-color: #ffc107;
+  color: black;
+}
+
+.badge-accepted {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-rejected {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+/* Table styles */
+.table-responsive {
+  margin-bottom: 1rem;
+}
+
+.table th {
+  border-top: none;
+  vertical-align: middle;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-bottom: 0;
+}
+
+/* Status badges in tables */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25em 0.6em;
+  border-radius: 0.25rem;
+}
+
+/* Action buttons */
+.btn-icon {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+/* Media queries */
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    padding-top: 1rem;
+  }
+  
+  .login-card {
+    margin-top: 50px;
+  }
+}
+
+/* Custom dashboard card styles */
+.card-body h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-body p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Helper classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-truncate-custom {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}

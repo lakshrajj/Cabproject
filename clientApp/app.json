@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Carpooling App",
+    "slug": "carpooling-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "sdkVersion": "53.0.0",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ],
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your position on the map and calculate pickup times.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to track your position during rides."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow this app to use your location to track your ride progress and calculate ETAs."
+        }
+      ]
+    ]
+  }
+}
